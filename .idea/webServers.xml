@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="141779b5-9239-4f26-ac2b-0ed6a56afec2" name="prometeo360.gabrielefusi.com" url="http://prometeo360.gabrielefusi.com">
+        <fileTransfer host="ftp.gabrielefusi.com" port="21" rootFolder="/prometeo360.gabrielefusi.com" password="df9bdf98df9adf9ddf92df9ddfcddfcbdfc8dfcfdfd8" username="i4x_gabriele">
+          <advancedOptions>
+            <advancedOptions compatibilityMode="true" dataProtectionLevel="Private" forceListCommand="true" passiveMode="true" showHiddenFiles="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

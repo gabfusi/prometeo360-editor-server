@@ -1,0 +1,14 @@
+@import "reset";
+
+body{
+
+}
+
+html.embed-page{
+  &, body, #player{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@import "player";

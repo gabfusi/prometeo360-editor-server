@@ -1,0 +1,26 @@
+#controls {
+  overflow: hidden;
+  background: #eee;
+  margin: 0 auto; }
+  #controls > * {
+    margin: 8px;
+    cursor: pointer;
+    opacity: 0.5; }
+  #controls > *:hover {
+    opacity: 1; }
+
+#toggleplay {
+  float: left;
+  background: url("/static/player/img/ic_pause_black_24dp.svg");
+  width: 24px;
+  height: 24px; }
+
+#toggleplay.paused {
+  background: url("/static/player/img/ic_play_arrow_black_24dp.svg"); }
+
+#time {
+  float: left;
+  height: 19px;
+  padding-top: 5px; }
+
+/*# sourceMappingURL=player.css.map */
