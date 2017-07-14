@@ -14,9 +14,11 @@ io.on('connection', function (socket) {
     let filepath = path.join(__dirname, 'uploads', 'videos', filename);
 
     stream.on('end', function () {
-      console.log('file sent');
+      socket.emit('file-uploaded', { filename: filename });
+      console.log('file sent', filename);
     });
 
+    console.log('Uploading video... ' + filename);
     stream.pipe(fs.createWriteStream(filepath));
   });
 

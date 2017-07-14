@@ -39,6 +39,9 @@ app.use('/static', express.static('public'));
 app.use('/uploads', express.static('uploads'));
 app.use('/vr', express.static(path.join(__dirname, 'node_modules', 'vrview')));
 
+console.log(express.static('public'));
+console.log(express.static('uploads'));
+
 // -----------------------------------------------------------------------------
 // Routing
 

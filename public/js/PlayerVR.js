@@ -19,6 +19,7 @@
     }
 
     // data & logic
+    options  = options || {};
     this.options = options || {};
     this.options.videoPath = (options.videoPath || '/uploads/videos') + '/';
     this.movie = movie;

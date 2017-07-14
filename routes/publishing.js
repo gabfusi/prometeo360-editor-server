@@ -34,11 +34,13 @@ module.exports = function (app) {
         const moviesDiff = movieService.getMoviesDiff(existingMovie, newMovie);
         const videosDiff = movieService.getVideosDiff(existingMovie, newMovie);
 
+        console.log(moviesDiff, videosDiff)
+
         if (!moviesDiff) {
           return movieService.getNonExistingVideoFiles(newMovieVideos, (videos) => {
             res.json({
               "existing": true,
-              "equals": true,
+              "equals": false,
               "videos": videos
             });
           });
@@ -54,15 +56,22 @@ module.exports = function (app) {
 
         movieService.update(newMovie);
 
-        // TODO always check if videos exists on filesystem, than intersect with added videos if any
+        return movieService.getNonExistingVideoFiles(newMovieVideos, (nonExistingVideos) => {
 
-        return movieService.getNonExistingVideoFiles(videosDiff.added, (videos) => {
-          res.json({
-            "existing": true,
-            "equals": false,
-            "videos": videos
+          movieService.getNonExistingVideoFiles(videosDiff.added, (videos) => {
+
+            let all = videos.concat(nonExistingVideos);
+            let toUpload = all.filter(function(elem, pos) { return all.indexOf(elem) === pos; });
+
+            res.json({
+              "existing": true,
+              "equals": false,
+              "videos": toUpload
+            });
           });
+
         });
+
       }
 
       movieService.add(newMovie);

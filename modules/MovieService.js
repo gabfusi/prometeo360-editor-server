@@ -138,7 +138,7 @@ const MovieService = function (user_id, readonly) {
     const nonExisting = [];
 
     async.eachSeries(videos, function (filename, cbk) {
-      const video = path.join(videosPath, filename);
+      let video = path.join(videosPath, filename);
       fsx.pathExists(video, function (err, exists) {
         console.log(video, exists);
         if (!exists) nonExisting.push(filename);
