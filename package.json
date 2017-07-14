@@ -1,14 +1,22 @@
 {
   "name": "prometeo360-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Prometeo 360 server è lo Storage server di Prometeo 360",
+  "private": false,
+  "homepage" : "http://prometeo360.gabrielefusi.com",
+  "license" : "CC-BY-NC-SA-4.0",
+  "author" : {
+    "name" : "Gabriele Fusi",
+    "email": "gabfusi@gmail.com"
+  },
+  "repository" : {
+    "url" : "https://github.com/gabfusi/prometeo360-editor-server"
+  },
   "main": "start.js",
   "scripts": {
     "start": "pm2 start ecosystem.config.js",
     "start-dev" : "node start"
   },
-  "author": "Gabriele Fusi <me@gabrielefusi.com> (http://gabrielefusi.com)",
-  "license": "ISC",
   "dependencies": {
     "app-module-path": "^2.1.0",
     "async": "^2.4.1",
