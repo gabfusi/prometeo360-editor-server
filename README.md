@@ -1,4 +1,4 @@
-# prometeo360-editor-server
+# Prometeo 360 server
 Storage server for Prometeo 360
 
 This work is part of my computer science thesis.
