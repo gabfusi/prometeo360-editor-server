@@ -1478,6 +1478,11 @@ html.embed-page, html.embed-page body, html.embed-page #player {
   width: 100%;
   height: 100%; }
 
+.player {
+  position: relative;
+  width: 100%;
+  height: 520px; }
+
 #vrview {
   height: calc( 100% - 40px); }
 

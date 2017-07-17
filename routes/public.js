@@ -23,10 +23,32 @@ module.exports = function (app) {
   app.get('/movie/:userId/:movieId', function (req, res) {
     let userId = req.params.userId;
     let movieId = req.params.movieId;
+      let movieService;
 
-    res.render('user-movie-single', {
-      "userId": movieId
-    });
+      try {
+          movieService = new MovieService(userId, true);
+      } catch (e) {
+          // user not found
+          return res.render('404');
+      }
+
+
+      movieService.getIfExists(movieId, (movie) => {
+
+          if (!movie) {
+              // movie not found
+              console.error("movie not found");
+              return res.render('404');
+          }
+
+          res.render('user-movie-single', {
+              "userId": userId,
+              "title" : movie.name,
+              "movie" : JSON.stringify(movie)
+          });
+
+      })
+
   });
 
   app.get('/embed/:userId/:movieId', function (req, res) {
