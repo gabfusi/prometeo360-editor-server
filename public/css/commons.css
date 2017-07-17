@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  padding: 13px 32px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff !important;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px, inset rgba(255, 255, 255, 0.88) 0px 1px 3px -1px;
+  background-color: #4589E3;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5DA4FF), color-stop(100%, #417BFF));
+  background: -webkit-linear-gradient(#5DA4FF, #417BFF);
+  background: -moz-linear-gradient(#5DA4FF, #417BFF);
+  background: -o-linear-gradient(#5DA4FF, #417BFF);
+  background: linear-gradient(#5DA4FF, #417BFF);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+/*# sourceMappingURL=commons.css.map */

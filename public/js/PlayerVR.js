@@ -52,7 +52,7 @@
       width: '100%',
       height: '100%',
       video: false,
-      preview: 'blank.png',
+      preview: this.options.videoPath + 'blank.png',
       is_stereo: false,
       is_autopan_off: true
     };
@@ -207,7 +207,7 @@
       height: '100%',
       video: false,
       defaultYaw: 0,
-      preview: 'blank.png',
+      preview: this.options.videoPath + 'blank.png',
       is_stereo: false,
       is_autopan_off: true,
       autoplay: true

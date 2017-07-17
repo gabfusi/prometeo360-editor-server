@@ -1,0 +1,87 @@
+
+#demo{
+  padding: 4em 0;
+  background-color: rgb(27, 26, 33);
+  color: white;
+}
+
+#download{
+  margin-top: 0;
+}
+
+.hero{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  min-height:620px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url(../img/intro.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+
+  &:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(right, rgba(255, 255, 255, 0) 0%, transparent 1%, rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0.35) 71%, rgba(0, 0, 0, 0.5) 100%);
+  }
+
+  .caption{
+    position: relative;
+    margin-top: 250px;
+    margin-top: 30vh;
+    color: white;
+    p{
+      font-size: 1.86em;
+      margin-bottom: .5em;
+      margin-top: .5em;
+    }
+  }
+
+}
+
+.macbook, .mock-devices{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.macbook{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 570px;
+  background-image: url(../img/screen-prometeo360-macbook.png);
+  height: 333px;
+}
+.mock-devices{
+  background-image: url(../img/prometeo-mock-devices.png);
+  height: 380px;
+  width: 100%;
+}
+
+.hero, .block{
+  .head{
+    text-align: center;
+    margin-bottom: 3em;
+    p{
+      font-size: 1.25em;
+    }
+  }
+}
+.block{
+  margin-top: 4em;
+}
+
+
+.footer{
+  text-align: center;
+}
+

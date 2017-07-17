@@ -1,0 +1,38 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  h1{
+    font-size: 2.36em;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  h1{
+    font-size: 1.86em;
+  }
+  .hero .caption{
+    text-align: center;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .hero .caption{
+    margin-top: 15vh;
+    img{ display: none; }
+  }
+  .container{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
