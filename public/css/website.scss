@@ -85,3 +85,37 @@
   text-align: center;
 }
 
+.single-movie{
+  h1{
+    margin-bottom: .75em;
+  }
+  .container{
+    max-width: 980px;
+  }
+}
+.navbar{
+  background-color: rgb(27, 26, 33);
+  color: #fff;
+  padding: 1em 0;
+  margin-bottom: 2em;
+  .logo{
+    width: 3em;
+    height: 3em;
+    margin: 0;
+    float: left;
+  }
+  a{
+    color: #fff;
+    box-shadow: none;
+    padding: .5em 0;
+    display: inline-block;
+    &:hover{
+      background: transparent;
+      color: #3d85c6;
+    }
+  }
+  .pull-right{
+    font-size: 1.5em;
+  }
+}
+

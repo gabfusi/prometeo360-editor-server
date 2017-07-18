@@ -42,8 +42,10 @@ module.exports = function (app) {
           }
 
           res.render('user-movie-single', {
+              layout: false,
               "userId": userId,
               "title" : movie.name,
+              "url" : req.protocol + '://' + req.get('host') + req.originalUrl,
               "movie" : JSON.stringify(movie)
           });
 

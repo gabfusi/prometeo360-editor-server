@@ -23,7 +23,7 @@
 
       case 'embed':
       case 'single':
-        movie = movie = window._sharedData.movie;
+        movie = window._sharedData.movie;
         initPlayer(movie);
         break;
     }
